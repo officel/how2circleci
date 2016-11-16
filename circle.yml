@@ -13,3 +13,4 @@ machine:
 test:
   override:
     - echo 'ok'
+    - bundle exec rake spec
