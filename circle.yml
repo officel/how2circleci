@@ -10,3 +10,6 @@ machine:
     version:
       2.2.4
 
+test:
+  override:
+    - echo 'ok'
