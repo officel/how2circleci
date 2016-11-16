@@ -1,0 +1,40 @@
+## Sample circle.yml file  https://circleci.com/docs/config-sample/
+
+machine:
+
+  timezone:
+    Asia/Tokyo
+
+  # Version of ruby to use
+  ruby:
+    version:
+      2.2.4
+
+
+## Customize checkout
+checkout:
+
+
+## Customize dependencies
+dependencies:
+  pre:
+    - gem uninstall bundler # use a custom version of bundler
+    - gem install bundler --pre
+
+  override:
+    - bundle install:
+        timeout: 180
+
+
+## Customize database setup
+database:
+
+
+## Customize test commands
+test:
+
+## Customize deployment commands
+deployment:
+
+## Custom notifications
+notify:
