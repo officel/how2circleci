@@ -15,3 +15,4 @@ test:
     - echo 'ok'
     - gem list
     - bundle exec rake spec
+    - aws s3 ls
