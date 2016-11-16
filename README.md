@@ -24,4 +24,8 @@ Base repository of test on CicleCI
 5. add awspec
   * check aws cli
   * create new IAM user on AWS. ( no permissions. so test error )
-  * attach policy 
+  * attach policy
+  * gem install awspec
+  * Rakefile, spec_helper.rb の書き換え
+  * テスト用に AMI のスペックを作成
+  * CircleCI用にIAMユーザ作って、ポリシーも絞ってあるけど、定期的にチェックはしたほうがいいかな。。。  
