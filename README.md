@@ -21,3 +21,7 @@ Base repository of test on CicleCI
   * spec/localhost/sample_spec.rb をリネームして書き換え
   * rake -T
   * rake spec
+5. add awspec
+  * check aws cli
+  * create new IAM user on AWS. ( no permissions. so test error )
+  * attach policy 
