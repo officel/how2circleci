@@ -1,6 +1,6 @@
 # Circle CI を始めてみたので記録
 
-Base repository of test on CicleCI
+Base repository of test on <a href="https://circleci.com/">CircleCI</a>
 
 # 作業履歴
 
