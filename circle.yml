@@ -2,8 +2,8 @@
 
 machine:
 
-  timezone:
-    Asia/Tokyo
+#  timezone:
+#    Asia/Tokyo
 
   # Version of ruby to use
   ruby:
@@ -21,3 +21,4 @@ test:
     - gem list
     - bundle exec rake spec
     - aws s3 ls
+    - aws cloudtrail describe-trails | jq '.trailList[].TrailARN'
