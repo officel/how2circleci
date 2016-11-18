@@ -29,3 +29,10 @@ Base repository of test on <a href="https://circleci.com/">CircleCI</a>
   * Rakefile, spec_helper.rb の書き換え
   * テスト用に AMI のスペックを作成
   * CircleCI用にIAMユーザ作って、ポリシーも絞ってあるけど、定期的にチェックはしたほうがいいかな。。。  
+6. challenge github Projects
+  * create projects
+  * create column
+  * create note
+  * change issue
+  * comment issue & close
+  * test git commit message in issues number
