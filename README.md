@@ -2,6 +2,8 @@
 
 Base repository of test on <a href="https://circleci.com/">CircleCI</a>
 
+[![CircleCI](https://circleci.com/gh/officel/how2circleci/tree/master.svg?style=shield&circle-token=bbf4aa8b174ccd505bdc90c672400e0f4652cf2a)](https://circleci.com/gh/officel/how2circleci/tree/master)
+
 # 作業履歴
 
 1. create new repository on github.com
@@ -36,3 +38,4 @@ Base repository of test on <a href="https://circleci.com/">CircleCI</a>
   * change issue
   * comment issue & close
   * test git commit message in issues number
+  * OMT: add CircleCI status badges
