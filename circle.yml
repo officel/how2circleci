@@ -17,6 +17,7 @@ test:
 
   override:
     - echo 'ok'
+    - pip list
     - gem list
     - bundle exec rake spec
     - aws s3 ls
