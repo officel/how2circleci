@@ -22,3 +22,13 @@ test:
     - bundle exec rake spec
     - aws s3 ls
     - aws cloudtrail describe-trails | jq '.trailList[].TrailARN'
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - echo 'master'
+  release:
+    branch: release
+    commands:
+      - echo 'release'
