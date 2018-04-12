@@ -1,0 +1,25 @@
+## Sample circle.yml file  https://circleci.com/docs/2.0/sample-config/
+
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4
+    steps:
+      - checkout
+      - run: ruby -v
+  test:
+    docker:
+      - image: circleci/ruby:2.4
+    steps:
+      - checkout
+      - run: bundle install
+      - run: aws configure set default.region ap-northeast-1
+      - run: aws configure set default.output json
+      - run: bundle exec rake spec
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
