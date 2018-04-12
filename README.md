@@ -39,3 +39,9 @@ Base repository of test on <a href="https://circleci.com/">CircleCI</a>
   * comment issue & close
   * test git commit message in issues number
   * OMT: add CircleCI status badges
+
+# 2.0 作業履歴
+
+* circle.yml -> .circleci/config.yml
+* ruby image にピーキーなバグがあるので、使用イメージに注意
+* gem 'rake' >> Gemfile
