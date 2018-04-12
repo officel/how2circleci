@@ -10,7 +10,8 @@ jobs:
       - run: ruby -v
   test:
     docker:
-      - image: circleci/ruby@sha256:91fa706ab0d1c49a1cf69b1803187e3663577477cb8e73542cdad1c8e2ecd771
+      - image: circleci/ruby:2.4.2
+      # circleci/ruby@sha256:91fa706ab0d1c49a1cf69b1803187e3663577477cb8e73542cdad1c8e2ecd771
       # see https://discuss.circleci.com/t/failed-to-invoke-bundler-on-circleci-2-0-with-circleci-ruby-2-4-2/18480/4
       # see https://github.com/circleci/circleci-images/issues/112
     steps:
