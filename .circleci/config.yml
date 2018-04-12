@@ -14,8 +14,7 @@ jobs:
     steps:
       - checkout
       - run: bundle install
-      - run: aws configure set default.region ap-northeast-1
-      - run: aws configure set default.output json
+      - run: export AWS_DEFAULT_REGION=ap-northeast-1
       - run: bundle exec rake spec
 workflows:
   version: 2
